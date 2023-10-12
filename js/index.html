@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    
+</head>
+<body>
+
+    <div class="container mt-3">
+   <!offset pour deplacer droit , card pour bordure header plus grand avec font col-md- pour dimunuer >
+        <div class="card col-md-5">
+            <div class="card-header bg-info  text-center">
+                <h2>Creation de compte bancaire</h2>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-3">Identification</div>
+                    <div class="col-md-9">
+                        <input type="text"  required id="Identification">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-3">prenom</div>
+                    <div class="col-md-9">
+                        <input type="text"id="prenom">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-3">NOM</div>
+                    <div class="col-md-9">
+                        <input type="text" id="Nom">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    
+                    <div class="col-md-9">
+                        <label for="" id="invalide" class="bg-danger">numero invalide</label>
+                    </div>
+
+                </div>
+                
+                
+
+                <div class="row mt-3">
+                    <div class="col-md-3">telephone</div>
+                    <div class="col-md-9">
+                        <input type="text" id="telephone">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-3">Adresse</div>
+                    <div class="col-md-9">
+                        <input type="text" id="Adresse">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="card mt-2 col-md-6 offset-6 fixed-top ">
+            <div class="row mt-4">
+                <div class="col-md-2 offset-5">
+                  <button  onclick="enregistrer()" class="btn btn-info btn-sm">Enregistrer</button>
+                </div>
+            </div> 
+            <div class="card-header bg-info mt-3">
+                <h2 class="text-center text-white">donner des clients</h2>
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr id="inf">
+                            <th width="25%" class="text-center">prenom</th>
+                            <th width="25%" class="text-center">Nom</th>
+                            <th width="25%" class="text-center">Nom</th>
+                            <th width="25%" class="text-center">Numero de compte</th>
+                            <th width="25%" class="text-center">type</th>
+                            <th width="25%" class="text-center">Solde</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listes">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="card col-md-5">
+            <div class="card-header bg-info  text-center">
+                <h2>Info Compte</h2>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-3">Numero de compte</div>
+                    <div class="col-md-9">
+                        <input type="text" required id="numeroc">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    
+                    <div class="col-md-9">
+                        <label for="" class="bg-danger" id="sol">solde invalide</label>
+                    </div>
+
+                </div>
+                
+                
+                <div class="row mt-3">
+                    <div class="col-md-3">Solde initial</div>
+                    <div class="col-md-9">
+                        <input type="text" id="solde">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-3">type de compte</div>
+                    <div class="col-md-9">
+                        <select name="" id="selec">
+                            <option value="courant">courant</option>
+                            <option value="Epargne">Epargne</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-3">pourcentage</div>
+                    <div class="col-md-9">
+                        <input type="text" id="pour">
+                    </div>
+                </div>
+                
+              
+               
+            </div>
+    </div>
+
+    <script src="dev.js">
+        
+    </script> 
+
+</body>
+</html>
