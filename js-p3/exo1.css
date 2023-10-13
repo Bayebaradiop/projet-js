@@ -1,0 +1,17 @@
+body{
+    background-image:url(8ebd4a50-ce24-4b89-a1b2-c39fbc3065aa.jpg);
+    background-size:cover;
+    font-weight: 900;
+    
+}
+.container{
+    margin-left: 55px;
+    margin-top: 18px;
+}
+.card{
+    background-image: url(red-carpet-texture-260nw-302461349.webp) ;
+    background-size:cover;
+}
+.ml-5{
+    padding-bottom: 20px;
+}
